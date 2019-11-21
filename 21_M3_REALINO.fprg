@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Soy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-22 02:16:49 AM"/>
+        <attribute name="created" value="U295O0RFU0tUT1AtQTFSTkRQUjsyMDE5LTExLTIyOzAyOjA5OjA4IEFNOzI2Njg="/>
+        <attribute name="edited" value="U295O0RFU0tUT1AtQTFSTkRQUjsyMDE5LTExLTIyOzAyOjE2OjQ5IEFNOzE7Mjc3OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <declare name="ooe" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a number and we will figure out wether if it is odd or even.&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="ooe" expression="num % 2"/>
+            <if expression="ooe == 0">
+                <then>
+                    <output expression="&quot;Your number: &quot; &amp; num &amp; &quot; ,is even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Your number: &quot; &amp; num &amp; &quot; ,is odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

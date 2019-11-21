@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Soy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-22 02:02:29 AM"/>
+        <attribute name="created" value="U295O0RFU0tUT1AtQTFSTkRQUjsyMDE5LTExLTIyOzAxOjU2OjUyIEFNOzI2Njg="/>
+        <attribute name="edited" value="U295O0RFU0tUT1AtQTFSTkRQUjsyMDE5LTExLTIyOzAyOjAyOjI5IEFNOzE7Mjc3Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="answer" type="Integer" array="False" size=""/>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <declare name="diameter" type="Integer" array="False" size=""/>
+            <output expression="&quot;If you have the radius press 1, but if you have the area instead, press any number but 1&quot;" newline="True"/>
+            <input variable="answer"/>
+            <if expression="answer = 1">
+                <then>
+                    <output expression="&quot;Enter the radius of the circle&quot;" newline="True"/>
+                    <input variable="radius"/>
+                    <assign variable="area" expression="3.14 * radius ^ 2"/>
+                </then>
+                <else>
+                    <output expression="&quot;Enter the diameter of the circle&quot;" newline="True"/>
+                    <input variable="diameter"/>
+                    <assign variable="area" expression="3.14 * diameter"/>
+                </else>
+            </if>
+            <output expression="&quot;The area is: &quot; &amp; area" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
